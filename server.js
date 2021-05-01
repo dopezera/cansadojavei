@@ -20,6 +20,7 @@ app.use(express.json()); //allow json in the body of requests (signin backend in
 app.use(express.urlencoded({ extended: true })); //with this 2 middleware all requests that contain data will translate to req.body
 app.use(bodyParser.json());
 
+//testando
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
