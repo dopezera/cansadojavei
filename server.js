@@ -14,7 +14,7 @@ import cors from 'cors';
 
 dotenv.config();
 const app = express();
-
+//aa
 app.use(cors());
 app.use(express.json()); //allow json in the body of requests (signin backend in basir's video)
 app.use(express.urlencoded({ extended: true })); //with this 2 middleware all requests that contain data will translate to req.body
